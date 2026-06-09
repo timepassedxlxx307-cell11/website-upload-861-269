@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索筛选 - 影视在线</title>
+  <meta name="description" content="影视在线搜索筛选，按片名、地区、年份、类型查找高清电影和电视剧。">
+  <meta name="keywords" content="影视在线,高清电影,电视剧在线观看,免费影视,在线播放,剧情片,爱情片,动作片,综艺节目,视频播放,影视资源,电影网站,高清视频">
+  <link rel="stylesheet" href="assets/site.css">
+  
+</head>
+<body class="">
+  <header class="site-header" data-header>
+    <div class="header-inner">
+      <a class="logo" href="index.html" aria-label="影视在线首页">
+        <span class="logo-symbol">▶</span>
+        <span>影视在线</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html">首页</a>
+<a href="categories.html">分类</a>
+<a href="movies/page-1.html">全部影片</a>
+<a href="rank.html">排行榜</a>
+<a href="search.html">搜索</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="打开导航" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" data-mobile-nav>
+      <a href="index.html">首页</a>
+<a href="categories.html">分类</a>
+<a href="movies/page-1.html">全部影片</a>
+<a href="rank.html">排行榜</a>
+<a href="search.html">搜索</a>
+    </nav>
+  </header>
+  <main>
+    <section class="page-hero small-hero">
+      <div>
+        <span class="eyebrow">Search</span>
+        <h1>搜索筛选</h1>
+        <p>输入片名、标签、地区或年份，快速找到想看的影片。</p>
+      </div>
+    </section>
+    <section class="section search-section" data-search-root>
+      <form class="search-panel" data-search-form>
+        <label>
+          <span>关键词</span>
+          <input type="search" name="q" placeholder="搜索片名、标签、地区" autocomplete="off">
+        </label>
+        <label>
+          <span>分类</span>
+          <select name="category">
+            <option value="">全部分类</option>
+            <option value="剧情片场">剧情片场</option>
+<option value="爱情剧场">爱情剧场</option>
+<option value="动作冒险">动作冒险</option>
+<option value="喜剧欢乐">喜剧欢乐</option>
+<option value="悬疑犯罪">悬疑犯罪</option>
+<option value="恐怖惊悚">恐怖惊悚</option>
+<option value="奇幻科幻">奇幻科幻</option>
+<option value="青春校园">青春校园</option>
+<option value="都市情感">都市情感</option>
+<option value="家庭治愈">家庭治愈</option>
+<option value="历史古装">历史古装</option>
+<option value="热血励志">热血励志</option>
+          </select>
+        </label>
+        <label>
+          <span>年份</span>
+          <select name="year">
+            <option value="">全部年份</option>
+            <option value="2029">2029</option>
+<option value="2028">2028</option>
+<option value="2027">2027</option>
+<option value="2026">2026</option>
+<option value="2025">2025</option>
+<option value="2024">2024</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+<option value="2019">2019</option>
+<option value="2018">2018</option>
+<option value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+          </select>
+        </label>
+        <label>
+          <span>地区</span>
+          <select name="region">
+            <option value="">全部地区</option>
+            <option value="东欧 (虚构)">东欧 (虚构)</option>
+<option value="中国">中国</option>
+<option value="中国内地">中国内地</option>
+<option value="中国台湾">中国台湾</option>
+<option value="中国台湾,中国大陆">中国台湾,中国大陆</option>
+<option value="中国台湾,日本">中国台湾,日本</option>
+<option value="中国台湾/日本">中国台湾/日本</option>
+<option value="中国大陆">中国大陆</option>
+<option value="中国大陆,泰国">中国大陆,泰国</option>
+<option value="中国大陆/俄罗斯">中国大陆/俄罗斯</option>
+<option value="中国大陆/日本">中国大陆/日本</option>
+<option value="中国大陆/法国">中国大陆/法国</option>
+<option value="中国大陆/泰国">中国大陆/泰国</option>
+<option value="中国大陆/美国">中国大陆/美国</option>
+<option value="中国大陆/香港">中国大陆/香港</option>
+<option value="中国香港">中国香港</option>
+<option value="中国香港/中国大陆">中国香港/中国大陆</option>
+<option value="中国香港/法国">中国香港/法国</option>
+<option value="中国香港/泰国">中国香港/泰国</option>
+<option value="丹麦">丹麦</option>
+<option value="丹麦/英国">丹麦/英国</option>
+<option value="乌克兰">乌克兰</option>
+<option value="乌克兰/波兰">乌克兰/波兰</option>
+<option value="以色列">以色列</option>
+<option value="伊朗">伊朗</option>
+<option value="伊朗/法国">伊朗/法国</option>
+<option value="俄罗斯">俄罗斯</option>
+<option value="俄罗斯/乌克兰">俄罗斯/乌克兰</option>
+<option value="俄罗斯、英国">俄罗斯、英国</option>
+<option value="冰岛">冰岛</option>
+<option value="冰岛/挪威">冰岛/挪威</option>
+<option value="加拿大">加拿大</option>
+<option value="加拿大/德国">加拿大/德国</option>
+<option value="加拿大/挪威">加拿大/挪威</option>
+<option value="匈牙利">匈牙利</option>
+<option value="北欧 (瑞典/丹麦)">北欧 (瑞典/丹麦)</option>
+<option value="北欧/冰岛">北欧/冰岛</option>
+<option value="北欧/英国">北欧/英国</option>
+<option value="华语">华语</option>
+<option value="印度">印度</option>
+          </select>
+        </label>
+      </form>
+      <div class="search-result-head">
+        <h2>筛选结果</h2>
+      </div>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-logo" href="index.html">影视在线</a>
+      <p>高清电影电视剧在线观看平台，精选剧情、爱情、动作、喜剧等精彩内容。</p>
+      <div class="footer-links">
+        <a href="categories.html">分类</a>
+        <a href="movies/page-1.html">全部影片</a>
+        <a href="rank.html">排行榜</a>
+        <a href="search.html">搜索</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/movies-data.js"></script>
+  <script src="assets/site.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
